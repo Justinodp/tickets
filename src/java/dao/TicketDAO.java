@@ -45,8 +45,9 @@ public class TicketDAO {
         return  retorno;
     } 
     
-    public boolean save(Usuario usuario, String descripcion, ProductoFalla idProducto_falla, int folio){
-        Ticket t = new Ticket(usuario, descripcion, idProducto_falla, new Date(), folio);
+    public boolean save(Usuario usuario, String descripcion, int idProducto_falla, int folio){
+        ProductoFalla pf = (ProductoFalla)session.load(ProductoFalla.class, idProducto_falla);
+        Ticket t = new Ticket(usuario, descripcion, pf, new Date(), folio);
         try{
             Transaction transaccion=session.beginTransaction();
             session.save(t);
