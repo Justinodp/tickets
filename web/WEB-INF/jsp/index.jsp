@@ -4,16 +4,38 @@
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Welcome to Spring Web MVC project</title>
-    </head>
-
-    <body>
-        <p>Hello! This is the default welcome page for a Spring Web MVC project.</p>
-        <p><i>To display a different welcome page for this project, modify</i>
-            <tt>index.jsp</tt> <i>, or create your own welcome page then change
-                the redirection in</i> <tt>redirect.jsp</tt> <i>to point to the new
-                welcome page and also update the welcome-file setting in</i>
-            <tt>web.xml</tt>.</p>
-    </body>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.js"/></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="login-bars">
+                    <a class="btn btn-default log-bar" href="admin.jsp" role="button">ADMIN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:12%">
+        <div class="col-md-6" >
+            <p style="font-size: 4.5em;line-height:1em">¿Tienes algun problema con tu sofware?</p>
+            <hr>
+            <a class="btn btn-default" href="formulario.jsp" role="button">Reportalo</a>
+        </div>
+    </div>
+<footer style="height: 10%;position: fixed;bottom: 0;left: 0;width: 100%;z-index: 5;background-color:#ecec">
+    <div class="container">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <hr>
+            <h5> este es nuestro maravilloso footer</h5>
+        </div>
+    </div>
+</foother>
+</body>
 </html>
